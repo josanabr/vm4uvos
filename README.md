@@ -88,13 +88,14 @@ vagrant up --no-provision
 ## Instalando XV6
 
 La nueva version de XV6 está diseñada para trabajar sobre sistemas RISC-V.
-RISC-V es otra arquitectura y trataremos de continuar sobre la arquitectura x86.
+RISC-V es otra arquitectura de computador y trataremos de continuar sobre la arquitectura x86.
 De todos modos, la mayoría del código relativo a la arquitectura de un computador está oculto para el desarrollador (incluso las llamadas al sistema).
-Para facilitar el soporte a múltiples plataformas de hardware, lo que se busca es que la mayoría de las operaciones relativas al computador es escriban en lenguaje máquina y queden circunscritas a partes del código muy particulares.
+Para facilitar el soporte a múltiples plataformas de hardware, lo que se busca es que la mayoría de las operaciones relativas a la arquitectura del computador se escriban en lenguaje máquina y queden circunscritas a partes del código muy particulares.
 
 Se describirán ahora los pasos para hacer la instalación de XV6 en la máquina virtual desplegada anteriormente.
 
-Lo primero que se debe hacer es clonar el repositorio de XV6.
+Ingresar via SSH a la máquina virtual, `vagrant ssh`. 
+Se procede a clonar el repositorio de XV6.
 Para ello se sugiere ir al directorio `/vagrant` dentro de la máquina virtual.
 Una vez en este directorio (ejecutar `pwd` y el comando debería arrojar por pantalla `/vagrant`) ejecutar el siguiente comando:
 
@@ -102,7 +103,7 @@ Una vez en este directorio (ejecutar `pwd` y el comando debería arrojar por pan
 git clone https://github.com/mit-pdos/xv6-public.git
 ```
 
-Para compilar este sistema operativo se hace necesario la instalación de varios paquetes y para ello se usa la línea de comandos descrita a continuación.
+Para compilar este sistema operativo se hace necesario la instalación de varios paquetes y para ello se usa la siguiente línea de comandos:
 
 ```
 sudo apt-get install qemu ghostscript mpage
@@ -119,12 +120,12 @@ make qemu-nox
 
 Este sistema es muy básico y tiene muy pocos comandos.
 De hecho, este sistema no tiene un comando que permita la salida del sistema. 
-Para salir del sistema operativo se puede ejecutar los siguientes pasos.
+Para salir del sistema operativo se sugiere ejecutar los siguientes pasos:
 
 * Abrir otra terminal
 * Ingresar con `vagrant ssh` a la máquina virtual
 * Buscar el comando `make qemu-nox` e identificar su `pid`, `ps ax | grep qemu-nox`
-* Con el número obtenido anteriorment, procede a eliminar el proceso, `kill -9 <pid_encontrado`
+* Con el número obtenido anteriorment, procede a eliminar el proceso, `kill -9 <pid_encontrado>`
 
 Una vez ejecute estos pasos usted podrá volver a la terminal anterior y el sistema operativo ya habrá terminado su ejecución.
 
