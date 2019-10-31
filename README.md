@@ -125,7 +125,7 @@ Para salir del sistema operativo se sugiere ejecutar los siguientes pasos:
 * Abrir otra terminal
 * Ingresar con `vagrant ssh` a la máquina virtual
 * Buscar el comando `make qemu-nox` e identificar su `pid`, `ps ax | grep qemu-nox`
-* Con el número obtenido anteriorment, procede a eliminar el proceso, `kill -9 <pid_encontrado>`
+* Con el número obtenido anteriormente, procede a eliminar el proceso, `kill -9 <pid_encontrado>`
 
 Una vez ejecute estos pasos usted podrá volver a la terminal anterior y el sistema operativo ya habrá terminado su ejecución.
 
