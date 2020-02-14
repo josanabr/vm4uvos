@@ -17,7 +17,7 @@ Se ha escrito un programa en C que dependiendo del argumento que se le pase al a
 Ejecutar el siguiente comando para instalar el programa que determina el rendimiento de su aplicación 
 
 ```
-sudo apt-get install linux-tools-common linux-tools-generic linux-cloud-tools-generic valgrind
+sudo apt-get install linux-tools-common linux-tools-generic linux-cloud-tools-generic valgrind gcc
 ```
 
 ### Compilación y ejecución del programa
