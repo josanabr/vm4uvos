@@ -10,6 +10,9 @@ Para llevar a cabo este despliegue se hace necesario tener instalados los siguie
 * **VirtualBox versión 6.1.10r138449**. Sugiero hacer la instalación desde los repositorios provistos por la empresa que mantiene VirtualBox [enlace](https://www.virtualbox.org/wiki/Downloads).
 
 ## Validando la instalación
+
+**Los siguientes comandos ejecutarlos desde una terminal.**
+
 Para validar la instalación de los paquetes por favor abra una terminal y ejecute los siguientes comandos:
 
 ```
